@@ -77,18 +77,12 @@
         style="height: 200px"
       ></textarea>
 
-      <input
-        onclick="myFunction()"
+      <a
+      class="btn btn-primary"
+      onclick="location.href = 'http://localhost:3000/home'"
         style="background-color: #1549aa"
-        type="submit"
-        value="Send"
-      />
+      > Send </a>
     </form>
   </div>
-  <script>
-    function myFunction() {
-      alert("Information Sent.");
-      window.location = "/app/views/content/home.ejs";
-    }
-  </script>
+
 </body>
