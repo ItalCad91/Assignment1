@@ -3,12 +3,15 @@ debug("comp-229");
 import http from "http";
 import app from "./app/app.js";
 
+//SET MY PORT TO 3000
 const PORT = normalizePort(process.env.PORT || 3000);
 app.set("port", PORT);
 
+//CREATES THE SERVER
 const server = http.createServer(app);
 
-server.listen(PORT);
+
+server.listen(PORT); //START THE SERVER
 server.on("error", onError);
 server.on("listening", onListening);
 
